@@ -7,7 +7,7 @@ import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-export const ProductPageTemplate = ({
+export const GoodsPageTemplate = ({
   image,
   title,
   heading,
@@ -30,8 +30,8 @@ export const ProductPageTemplate = ({
       <h2
         className="has-text-weight-bold is-size-1"
         style={{
-          boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-          backgroundColor: '#f40',
+          boxShadow: '0.5rem 0 0 gray, -0.5rem 0 0 gray',
+          backgroundColor: 'gray',
           color: 'white',
           padding: '1rem',
         }}
@@ -56,7 +56,6 @@ export const ProductPageTemplate = ({
                   <h3 className="has-text-weight-semibold is-size-3">
                     {main.heading}
                   </h3>
-                  <p>{main.description}</p>
                 </div>
               </div>
               <div className="tile is-ancestor">
@@ -104,7 +103,7 @@ export const ProductPageTemplate = ({
   </div>
 )
 
-ProductPageTemplate.propTypes = {
+GoodsPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
@@ -128,12 +127,12 @@ ProductPageTemplate.propTypes = {
   }),
 }
 
-const ProductPage = ({ data }) => {
+const GoodsPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
-      <ProductPageTemplate
+      <GoodsPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
@@ -148,7 +147,7 @@ const ProductPage = ({ data }) => {
   )
 }
 
-ProductPage.propTypes = {
+GoodsPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -156,10 +155,10 @@ ProductPage.propTypes = {
   }),
 }
 
-export default ProductPage
+export default GoodsPage
 
-export const productPageQuery = graphql`
-  query ProductPage($id: String!) {
+export const goodsPageQuery = graphql`
+  query GoodsPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title

@@ -12,8 +12,9 @@ export const IndexPageTemplate = ({
   heading,
   subheading,
   mainpitch,
+  concert,
   description,
-  intro,
+  intro
 }) => (
   <div>
     <div
@@ -40,8 +41,11 @@ export const IndexPageTemplate = ({
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
             boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+              // 'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
+                'gray 0.5rem 0px 0px, gray -0.5rem 0px 0px',
+            // backgroundColor: 'rgb(255, 68, 0)',
+            backgroundColor: 'gray',
+            // color: 'white',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -53,8 +57,8 @@ export const IndexPageTemplate = ({
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
             boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+              'gray 0.5rem 0px 0px, gray -0.5rem 0px 0px',
+            backgroundColor: 'gray',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -75,22 +79,71 @@ export const IndexPageTemplate = ({
                     <h1 className="title">{mainpitch.title}</h1>
                   </div>
                   <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
+                    <p>{mainpitch.description}</p>
                   </div>
                 </div>
                 <Features gridItems={intro.blurbs} />
+                <div className="content">
+                  <div className="tile">
+                    <h1 className="title">About</h1>
+                  </div>
+                  <div className="tile">
+                    <h3 className="title">インスタレーション</h3>
+                  </div>
+                  <div className="tile">
+                    <p>日程　｜2021.1.28(Thu)-2021.1.29(Fri)</p>
+                  </div>
+                  <div className="tile">
+                    <p>時間　｜10:00-18:00</p>
+                  </div>
+                  <div className="tile">
+                    <p>会場　｜100BAN STUDIO（神戸　三ノ宮）</p>
+                  </div>
+                  <div className="tile">
+                    <p>住所　｜兵庫県神戸市。。。</p>
+                  </div>
+                  <div className="tile">
+                    <p>入場料｜無料（投げ銭制）</p>
+                  </div>
+                </div>
+                <div className="content">
+                  <div className="tile">
+                    <h3 className="title">コンサート</h3>
+                  </div>
+                  <div className="tile">
+                    <p>第一回｜2021.1.30(Sat)19:30-20:30</p>
+                  </div>
+                  <div className="tile">
+                    <p>第二回｜2021.1.31(Sun)14:00-15:00</p>
+                  </div>
+                  <div className="tile">
+                    <p>会場　｜100BAN STUDIO（神戸　三ノ宮）</p>
+                  </div>
+                  <div className="tile">
+                    <p>住所　｜兵庫県神戸市。。。</p>
+                  </div>
+                  <div className="tile">
+                    <p>入場料｜xxx円</p>
+                  </div>
+                </div>
+                <div className="content">
+                  <div className="tile">
+                    <h3 className="title">インターネット配信</h3>
+                  </div>
+                  <div className="tile">
+                    <p>日時　｜イベント開催日時（生配信）</p>
+                  </div>
+                  <div className="tile">
+                    <p>サイト｜Youtube URL</p>
+                  </div>
+                  <div className="tile">
+                    <p>入場料｜無料（投げ銭制）</p>
+                  </div>
+                </div>
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
+                    <Link className="btn" to="/about">
+                      More
                     </Link>
                   </div>
                 </div>
@@ -120,6 +173,7 @@ IndexPageTemplate.propTypes = {
   heading: PropTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
+  concert: PropTypes.string,
   description: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
@@ -137,6 +191,7 @@ const IndexPage = ({ data }) => {
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
+        concert={frontmatter.concert}
         description={frontmatter.description}
         intro={frontmatter.intro}
       />
@@ -172,6 +227,7 @@ export const pageQuery = graphql`
           title
           description
         }
+        concert
         description
         intro {
           blurbs {
