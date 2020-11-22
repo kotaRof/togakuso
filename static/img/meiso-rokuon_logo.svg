@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="557pt"
+   height="420pt"
+   viewBox="0 0 557 420"
+   preserveAspectRatio="xMidYMid meet"
+   id="svg536"
+   sodipodi:docname="meiso-rokuon_logo.svg"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)">
+  <metadata
+     id="metadata542">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs540" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="855"
+     id="namedview538"
+     showgrid="false"
+     inkscape:zoom="0.36626922"
+     inkscape:cx="156.88644"
+     inkscape:cy="481.39493"
+     inkscape:window-x="24"
+     inkscape:window-y="51"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g534" />
+  <g
+     transform="matrix(0.1,0,0,-0.1,0,695)"
+     fill="#000000"
+     stroke="none"
+     id="g534">
+    <g
+       id="g550"
+       transform="matrix(3.0039415,0,0,3.0039415,-4761.1328,-5422.0647)">
+      <path
+         d="m 2625,4100 c -16,-4 -50,-8 -74,-9 -63,-1 -106,-38 -144,-120 -16,-36 -35,-73 -42,-81 -27,-34 -56,-101 -91,-213 -42,-135 -66,-166 -169,-219 -59,-30 -60,-30 -126,-18 -67,13 -155,8 -172,-9 -16,-16 3,-31 36,-31 18,-1 61,-7 97,-15 42,-9 91,-12 139,-8 66,5 78,10 122,45 65,51 93,97 136,225 19,59 52,134 72,167 20,34 47,83 61,110 20,38 35,52 70,68 25,11 64,30 87,41 23,12 45,18 49,14 7,-7 -7,-58 -53,-198 -42,-127 -21,-122 26,6 44,117 83,199 102,210 16,10 10,21 -16,33 -28,13 -64,14 -110,2 z"
+         id="path506" />
+      <path
+         d="m 3240,3853 c -231,-14 -293,-23 -343,-48 -57,-30 -188,-129 -230,-173 -39,-41 -34,-76 11,-80 27,-3 43,5 90,46 68,58 141,108 177,122 79,30 375,62 375,41 0,-17 -23,-61 -32,-61 -4,0 -8,-5 -8,-12 0,-6 -27,-36 -61,-66 -33,-30 -74,-78 -90,-107 -39,-68 -88,-125 -141,-160 -23,-16 -74,-55 -111,-87 -38,-32 -74,-58 -81,-58 -16,0 -46,-32 -46,-48 0,-26 50,-10 101,32 30,24 89,61 131,81 86,40 118,73 154,152 17,39 46,75 103,129 83,78 163,181 194,248 9,21 16,40 14,42 -6,6 -149,11 -207,7 z"
+         id="path508" />
+      <path
+         d="m 1643,3433 c -29,-2 -53,-7 -53,-11 0,-14 16,-28 44,-40 17,-7 48,-28 70,-45 25,-20 38,-26 34,-15 -4,9 -1,22 8,28 22,19 17,44 -16,68 -16,12 -30,21 -32,20 -2,-1 -27,-3 -55,-5 z"
+         id="path510" />
+      <path
+         d="m 1805,3351 c -6,-11 9,-23 19,-14 9,9 7,23 -3,23 -6,0 -12,-4 -16,-9 z"
+         id="path512" />
+      <path
+         d="m 1850,3181 c 0,-5 14,-20 30,-33 17,-13 63,-54 102,-91 39,-38 92,-79 118,-92 57,-29 194,-65 247,-65 21,0 76,-7 123,-15 114,-20 120,-20 120,9 0,23 -9,29 -75,51 -11,3 -74,12 -140,20 -211,25 -264,43 -316,109 -11,14 -53,45 -95,70 -71,44 -114,57 -114,37 z"
+         id="path514" />
+      <path
+         d="m 3172,2925 c -24,-17 -62,-84 -62,-109 0,-17 -53,-13 -110,9 -44,17 -129,45 -155,51 -24,6 -71,-27 -62,-43 4,-6 53,-25 109,-42 232,-72 226,-71 268,-41 59,42 100,182 55,188 -11,1 -30,-5 -43,-13 z"
+         id="path518" />
+    </g>
+  </g>
+</svg>

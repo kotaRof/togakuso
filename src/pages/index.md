@@ -13,10 +13,10 @@ description: >-
   このイベントってなんやねんのお話を文章で書く
 intro:
   blurbs:
-    - image: /img/naoyuki-hiyoshi.jpg
+    - image: /img/naoyuki-hiyoshi_1.5.jpg
       text: >
         日吉直行．
-    - image: /img/tomomi-horikawa.jpg
+    - image: /img/tomomi-horikawa_1.5.jpg
       text: >
         堀川智美．
     - image: /img/akihiko-goto.jpg

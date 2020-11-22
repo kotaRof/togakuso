@@ -83,61 +83,74 @@ export const IndexPageTemplate = ({
                   </div>
                 </div>
                 <Features gridItems={intro.blurbs} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="section section--gradient">
+        <div className="container">
+          <div className="section">
+            <div className="columns">
+              <div className="column is-10 is-offset-1">
                 <div className="content">
-                  <div className="tile">
                     <h1 className="title">About</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="title">インスタレーション</h3>
-                  </div>
-                  <div className="tile">
-                    <p>日程　｜2021.1.28(Thu)-2021.1.29(Fri)</p>
-                  </div>
-                  <div className="tile">
-                    <p>時間　｜10:00-18:00</p>
-                  </div>
-                  <div className="tile">
-                    <p>会場　｜100BAN STUDIO（神戸　三ノ宮）</p>
-                  </div>
-                  <div className="tile">
-                    <p>住所　｜兵庫県神戸市。。。</p>
-                  </div>
-                  <div className="tile">
-                    <p>入場料｜無料（投げ銭制）</p>
-                  </div>
                 </div>
-                <div className="content">
-                  <div className="tile">
-                    <h3 className="title">コンサート</h3>
+                <div className="column">
+                  <div className="content">
+                    <div>
+                      <h3 className="subtitle">インスタレーション</h3>
+                    </div>
+                    <div>
+                      <p>日程　｜2021.1.28(Thu)-2021.1.29(Fri)</p>
+                    </div>
+                    <div>
+                      <p>時間　｜10:00-18:00</p>
+                    </div>
+                    <div>
+                      <p>会場　｜100BAN STUDIO（神戸　三ノ宮） <a title="100ban-access" href="https://www.100ban.jp/map/index/index.html" target="_blank" rel="noopener noreferrer">access</a></p>
+                    </div>
+                    <div>
+                      <p>住所　｜兵庫県神戸市。。。</p>
+                    </div>
+                    <div>
+                      <p>入場料｜無料（投げ銭制）</p>
+                    </div>
                   </div>
-                  <div className="tile">
-                    <p>第一回｜2021.1.30(Sat)19:30-20:30</p>
+                  <div className="content">
+                    <div>
+                      <h3 className="subtitle">コンサート</h3>
+                    </div>
+                    <div>
+                      <p>第一回｜2021.1.30(Sat)19:30-20:30  <a title="gcal" target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=M2k5NWthMTYxaDU4OTM4cGtvcWU0ZDJnaTMgaG8zcHE1YTVzN201dWZib2x2a2J0ZXQ3djRAZw&amp;tmsrc=ho3pq5a5s7m5ufbolvkbtet7v4%40group.calendar.google.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_ja.gif"/></a></p>
+                    </div>
+                    <div>
+                      <p>第二回｜2021.1.31(Sun)14:00-15:00</p>
+                    </div>
+                    <div>
+                      <p>会場　｜100BAN STUDIO（神戸　三ノ宮） <a title="100ban-access" href="https://www.100ban.jp/map/index/index.html" target="_blank" rel="noopener noreferrer">access</a></p>
+                    </div>
+                    <div>
+                      <p>住所　｜兵庫県神戸市。。。</p>
+                    </div>
+                    <div>
+                      <p>入場料｜xxx円</p>
+                    </div>
                   </div>
-                  <div className="tile">
-                    <p>第二回｜2021.1.31(Sun)14:00-15:00</p>
-                  </div>
-                  <div className="tile">
-                    <p>会場　｜100BAN STUDIO（神戸　三ノ宮）</p>
-                  </div>
-                  <div className="tile">
-                    <p>住所　｜兵庫県神戸市。。。</p>
-                  </div>
-                  <div className="tile">
-                    <p>入場料｜xxx円</p>
-                  </div>
-                </div>
-                <div className="content">
-                  <div className="tile">
-                    <h3 className="title">インターネット配信</h3>
-                  </div>
-                  <div className="tile">
-                    <p>日時　｜イベント開催日時（生配信）</p>
-                  </div>
-                  <div className="tile">
-                    <p>サイト｜Youtube URL</p>
-                  </div>
-                  <div className="tile">
-                    <p>入場料｜無料（投げ銭制）</p>
+                  <div className="content">
+                    <div>
+                      <h3 className="subtitle">インターネット配信</h3>
+                    </div>
+                    <div>
+                      <p>日時　｜イベント開催日時（生配信）</p>
+                    </div>
+                    <div>
+                      <p>サイト｜Youtube URL</p>
+                    </div>
+                    <div>
+                      <p>入場料｜無料（投げ銭制）</p>
+                    </div>
                   </div>
                 </div>
                 <div className="columns">
@@ -147,6 +160,16 @@ export const IndexPageTemplate = ({
                     </Link>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="section section--gradient">
+        <div className="container">
+          <div className="section">
+            <div className="columns">
+              <div className="column is-10 is-offset-1">
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
                     Latest stories
@@ -162,9 +185,8 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </div>
+      </section>
+    </div>
 )
 
 IndexPageTemplate.propTypes = {

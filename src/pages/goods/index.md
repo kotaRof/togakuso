@@ -11,6 +11,9 @@ intro:
     - image: /img/cd-enishi.jpg
       text: >
         奏屋吉豊（かなでやきっと）
+    - image: /img/cd-enishi.jpg
+      text: >
+        奏屋吉豊（かなでやきっと）
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
