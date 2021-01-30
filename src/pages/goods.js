@@ -91,7 +91,7 @@ export const query = graphql`
             json
           }
           image {
-            fluid(maxWidth: 800, quality: 100) {
+            fluid(maxWidth: 300, quality: 100) {
               src
             }
           }

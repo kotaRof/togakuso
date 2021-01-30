@@ -1,9 +1,10 @@
 import * as React from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import { BLOCKS } from "@contentful/rich-text-types"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 import Layout from '../components/Layout'
+import StoryRoll from '../components/StoryRoll'
 
 const IndexPage = (props) => {
   const options = {
@@ -43,6 +44,17 @@ const IndexPage = (props) => {
               <div className="column is-10 is-offset-1">
                 <div className="content">
                   <p>{documentToReactComponents(props.data.contentfulPage.body.json, options)}</p>
+                  <div className="column is-12">
+                    <h3 className="has-text-weight-semibold is-size-2">
+                      Latest stories
+                    </h3>
+                    <StoryRoll />
+                    <div className="column is-12 has-text-centered">
+                      <Link className="btn" to="/stories">
+                        Read more
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
