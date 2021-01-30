@@ -1,11 +1,28 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+// import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import { BLOCKS } from "@contentful/rich-text-types"
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
+
+const options = {
+  renderText: text => {
+      return text.split('\n').reduce((children, textSegment, index) => {
+          return [...children, index > 0 && <br key={index} />, textSegment];
+      }, []);
+  },
+  renderNode: {
+      [BLOCKS.EMBEDDED_ASSET]: (node) => (
+          <img
+              src={node.data.target.fields.file["en-US"].url}
+              alt='feature top'
+          />
+      )
+  },
+};
 
 const FeatureGrid = ({ gridItems }) => (
   <div className="columns is-multiline">
     {gridItems.map((item) => (
-      <div key={item.text} className="column is-6">
+      <div key={item.explanation} className="column is-6">
         <section className="section">
           <div className="has-text-centered">
             <div
@@ -14,23 +31,19 @@ const FeatureGrid = ({ gridItems }) => (
                 display: 'inline-block',
               }}
             >
-              <PreviewCompatibleImage imageInfo={item} />
+              <img
+                  src={item.image.fluid.src}
+                  style={{borderRadius: '5px'}}
+                  alt='feature'
+              />
             </div>
           </div>
-          <p>{item.text}</p>
+          <p>{documentToReactComponents(item.explanation.json, options)}</p>
         </section>
       </div>
     ))}
   </div>
 )
 
-FeatureGrid.propTypes = {
-  gridItems: PropTypes.arrayOf(
-    PropTypes.shape({
-      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-      text: PropTypes.string,
-    })
-  ),
-}
 
 export default FeatureGrid
