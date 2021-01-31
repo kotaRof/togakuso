@@ -12,6 +12,17 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        // your google analytics tracking id
+        trackingId: `G-Z9BMKQMYJP`,
+        // Puts tracking script in the head instead of the body
+        head: false,
+        // enable ip anonymization
+        anonymize: true,
+      },
+    },
+    {
       resolve: "gatsby-source-contentful",
       options: {
         accessToken: process.env.accessToken,
@@ -20,12 +31,6 @@ module.exports = {
     },
     'gatsby-plugin-react-helmet',
     "gatsby-plugin-sass",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "ToGakuSo",
-      },
-    },
     "gatsby-plugin-sharp",
     {
       resolve: `gatsby-transformer-remark`,
