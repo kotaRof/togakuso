@@ -24,7 +24,7 @@ class StoryRoll extends React.Component {
                 <p className="post-meta">
                   <Link
                     className="title has-text-primary is-size-4"
-                    to={post.slug}
+                    to={`/stories/${post.slug}`}
                   >
                     {post.title}
                   </Link>
@@ -38,7 +38,7 @@ class StoryRoll extends React.Component {
                 {documentToPlainTextString(post.body.json).substr(0,400)}
                 <br />
                 <br />
-                <Link className="button" to={post.slug}>
+                <Link className="button" to={`/stories/${post.slug}`}>
                   Keep Reading →
                 </Link>
               </p>
